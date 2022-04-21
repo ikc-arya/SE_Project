@@ -360,7 +360,6 @@ def fetchAttendance(attendanceClass, attendanceDate):
         eel.attendanceTable("No result found", "", "", "", "")
     conn.close()
 
-
 @eel.expose
 def fetch_graph_data(graphClass):
     student_class = {
@@ -391,10 +390,8 @@ def fetch_graph_data(graphClass):
     cursor.close()
     eel.updateGraph(date_arr, data_arr)
 
-
 @eel.expose
 def get_user_details():
     return login.session['username']
-
 
 eel.start('login.html', size=(1280, 720))
