@@ -29,3 +29,4 @@ def logout():
     session["auth"] = False
     session["username"] = ""
     eel.logout()
+ #Login Modue
