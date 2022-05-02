@@ -394,4 +394,4 @@ def fetch_graph_data(graphClass):
 def get_user_details():
     return login.session['username']
 
-eel.start('login.html', size=(1280, 720))
+eel.start('login.html')
